@@ -73,6 +73,9 @@ while True:
     if 0 not in nilai_sudo:
         # jika tidak ada nilai 0 program berakhir
         print("\nJawaban: ")
+        #menampilkan sudo
+        fmenampilkan_sudo()
+
         break
     else:
         # jika ada nilai 0, cari titik (baris, kolom) bernilai 0
@@ -97,9 +100,6 @@ while True:
                     if len(nilai_kemungkinan) == 1:
                         sudo[baris][kolom] = nilai
                         nilai_sudo = fnilai_sudo()
-#menampilkan sudo
-fmenampilkan_sudo()
-
 
 
 
